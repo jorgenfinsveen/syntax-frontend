@@ -13,8 +13,10 @@ const About = ({t}) => {
       <section className='about-section about-intro'>
         <p className='about-intro__p about-section__p p--highlighted' dangerouslySetInnerHTML={{__html: t('intro')}}/>
         <div className='about-intro__grid-container'>
+
           <StudyProgramsAcordion/>
           <DecoratedPicture imgurl={config.url.CDN_URL + '/img/styret2.jpg'} decorationNr={3} cornerSize={400} w={1420} h={947} />
+          
         </div>
       </section>
       <section className='about-section'>

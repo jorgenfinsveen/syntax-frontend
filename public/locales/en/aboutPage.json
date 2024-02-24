@@ -3,10 +3,17 @@
   "intro": "Login is the student association for IT at <i class='logfont-ntnu'></i> NTNU in Gjøvik and everyone who studies the following courses is automatically a member of the association.",
   "bachelor": {
     "computerEngineer": "Computer engineering",
-    "digsec": "Digital infrastructure and cyber security",
+    "automation": "Automation and Intelligent Systems",
+
+
+
     "prog": "Programming"
   },
   "master": {
+    "simvis":"Simulation and Visualization",
+    "mekais":"Mechatronics and Automation",
+
+
     "infosec": "Information security",
     "applied": "Applied computer science",
     "colorimg": "Computational colour and spectral imaging"
@@ -15,6 +22,9 @@
     "infosec": "Information security and communication technology",
     "data": "Computer technology and informatics",
     "tele": "Electronics and telecommunications"
+  },
+  "forkurs": {
+    "forkurs": "Preperatory course for engineering"
   },
   "about": {
     "title": "By students, for students",

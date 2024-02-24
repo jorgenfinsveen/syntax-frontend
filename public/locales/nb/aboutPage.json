@@ -1,12 +1,20 @@
 {
   "title": "Hvem er vi?",
-  "intro": "Login er linjeforeningen for IT ved <i class='logfont-ntnu'></i> NTNU i Gjøvik og alle som går de følgene studiene er automatisk medlemmer i foreningen.",
+  "intro": "Login er linjeforeningen for IT ved <i class='logfont-ntnu'></i> NTNU i Ålesund og alle som går de følgene studiene er automatisk medlemmer i foreningen.",
   "bachelor": {
     "computerEngineer": "Dataingeniør",
+    "automation": "Automatisering og intelligente systemer" , 
+
+
     "digsec": "Digital infrastruktur og cybersikkerhet",
     "prog": "Programmering"
   },
   "master": {
+    "simvis":"Simulering og visualisering",
+    "mekais":"Mekatronikk og automatisering",
+
+
+
     "infosec": "Information security",
     "applied": "Applied computer science",
     "colorimg": "Computational colour and spectral imaging"
@@ -16,12 +24,15 @@
     "data": "Datateknologi og informatikk",
     "tele":  "Elektronikk og telekommunikasjon"
   },
+  "forkurs": {
+    "forkurs": "Forkurs for ingeniør- og sivilingeniørutdanning"
+  },
   "about": {
     "title": "Av studenter, for studenter",
     "intro": "Foreningen drives av frivillige studenter som arbeider for at du skal få mest mulig ut av studiene dine ved <i class='logfont-ntnu'></i> NTNU.",
     "body": {
-      "p1":"Vi arrangerer regelmessig sosiale arrangementer og bedriftspresentasjoner. Vi holder kontakt med aktuelle bedrifter og inviterer til blant annet cyberdagene én gang i semesteret slik at du som student skal bli kjent med mulighetene utdanningen din gir deg.",
-      "p2": "Hver uke samler vi studenter til <i class='logfont-tekkom'></i> TekKom- og <i class='logfont-ctf-filled'></i> CTF-samlinger, der man kan lære seg nye ting eller komme med bidrag til foreningen. Her kan man møte andre studenter som deler gleden for å lære, og å sette kunnskapene man tilegner seg i praksis. Videre jobber <i class='logfont-eventkom-filled'></i> EvntKom stadig med nye og spennende arrangementer som f.eks. filmkvelder og vinterball."
+      "p1":"Vi arrangerer regelmessig sosiale arrangementer og bedriftspresentasjoner. Vi holder kontakt med aktuelle bedrifter og inviterer til blant annet Næringslivsdagen én gang i semesteret slik at du som student skal bli kjent med mulighetene utdanningen din gir deg.",
+      "p2": "Vi samler studenter til <i class='logfont-tekkom'></i> TekKom- og <i class='logfont-ctf-filled'></i> CTF-samlinger, der man kan lære seg nye ting eller komme med bidrag til foreningen. Her kan man møte andre studenter som deler gleden for å lære, og å sette kunnskapene man tilegner seg i praksis. Videre jobber <i class='logfont-eventkom-filled'></i> EvntKom stadig med nye og spennende arrangementer som f.eks. filmkvelder og vinterbord."
     }
   },
   "committeeSection": {
@@ -29,7 +40,7 @@
     "intro": "Foreningen er satt sammen av et hovedstyret og en rekke komiteer.",
     "board": {
       "title": "Styret",
-      "body": "Øverste leddet i foreningen er styret. Under årsmøtet blir leder, nestleder og sekretær stemt frem, og disse sitter sammen med lederene fra de ulike komiteene i styret. Sammen er disse ansvarlige for å drive foreningen, styre økonomien og sørge for at alle utfører de oppgavene de skal.",
+      "body": "Øverste leddet i foreningen er styret. Under årsmøtet/generalforsammling blir leder, nestleder og sekretær stemt frem, og disse sitter sammen med lederene fra de ulike komiteene i styret. Sammen er disse ansvarlige for å drive foreningen, styre økonomien og sørge for at alle utfører de oppgavene de skal.",
       "leader": "Leder",
       "deputyChairman": "Nestleder",
       "secretary": "Sekretær",
