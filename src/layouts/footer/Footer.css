@@ -55,8 +55,8 @@
 
   .footer__flex-container {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     gap: 10rem;
   }
 
