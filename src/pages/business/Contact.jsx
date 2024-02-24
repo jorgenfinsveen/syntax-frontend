@@ -21,7 +21,7 @@ const Contact = ({t,i18n}) => {
             6009 ÅLESUND
           </p>
           <h4 className='heading-4'>{t('contact.email')}:</h4>
-          <p className='p--regular'><a className='standard-link standard-link--underscore-hover' href='mailto:kontakt@login.no'>kontakt@login.no</a></p>
+          <p className='p--regular'><a className='standard-link standard-link--underscore-hover' href='mailto:neringsliv@syntax-linjeforening.no'>neringsliv@syntax-linjeforening.no</a></p>
         </div>
         <div className='contact-card__map'>
           <MazeMap 
