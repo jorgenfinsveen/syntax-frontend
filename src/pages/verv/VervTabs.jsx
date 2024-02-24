@@ -14,7 +14,7 @@ import './VervTabs.css'
 
 
 const VervTabs = ({t}) => {
-  const [activeTab, setActiveTab] = useState('event')
+  const [activeTab, setActiveTab] = useState('tekkom')
 
   return (
     <div className='tabs committees'>
