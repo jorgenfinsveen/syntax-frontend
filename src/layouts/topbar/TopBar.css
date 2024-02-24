@@ -1,0 +1,183 @@
+.topbar {
+  display: flex;
+  max-width: 75rem;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  height: var(--h-topbar);
+  transition: 0.5s;
+}
+
+.topbar__img {
+  display: block;
+  height: 3rem;
+}
+
+
+/* logo component from assets -> svg */
+.logo-small {
+  display: block;
+  height: 3rem;
+}
+
+.logo-small__letter {
+  fill: var(--c-font-main);
+  transition: 1s .1s;
+}
+
+
+.topbar__toggle {
+  display: flex;
+  width: calc(100vw - 8rem);
+  justify-content: end;
+}
+
+.topbar_profile {
+    margin-top: 0.9rem;
+    margin-left: 0.7rem;
+}
+
+/* main-nav */
+
+.main-nav {
+  display: none;
+}
+
+
+/* mobile nav */
+
+.mobile-nav {
+  position: fixed;
+  top: 5rem;
+  width: calc(100% - 2rem);
+}
+
+.topbar__hamburger {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.topbar__burger-bun {
+  background: var(--c-font-main);
+  height: .2rem;
+  position: absolute;
+  width: 2rem;
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+  left: 6px;
+}
+
+.topbar__burger-bun--top {
+  top: 1rem;
+}
+
+.topbar__burger-bun--bottom {
+  top: 1.8rem;
+}
+
+.topbar__hamburger--open .topbar__burger-bun--top {
+  transform: rotate(-45deg) translate(-4.6px, 4.6px);
+  background: var(--c-white);
+}
+
+.topbar__hamburger--open .topbar__burger-bun--bottom {
+  transform: rotate(45deg) translate(-4.6px, -4.6px);
+  background: var(--c-white);
+}
+
+
+.mobile-nav__item {
+  list-style: none;  
+  color: var(--c-white);
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-align: right;
+  overflow: hidden;
+  width: auto;
+  height: 0;
+  opacity: 0;
+  padding-right: .8rem;
+  transition: opacity .5s, height 2s, padding .5s;
+}
+
+.mobile-nav--open .mobile-nav__item {
+  opacity: 1;
+  height: auto;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+
+/* higlight active navlink and prevent hover */
+
+.active .mobile-nav__item {
+  color: var(--c-primary);
+}
+
+
+.topbar__toggle {
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+/* to ensure that the mobile nav can never be open on desktop view */
+@media only screen and (max-width: 800px) {
+  .topbar--open {
+    height: 100vh;
+    background-color: var(--c-bg-mobile-nav-open);
+  }
+  .topbar--open .logo-small__letter {
+    fill: var(--c-white);
+  }
+}
+
+
+/* For desktop: */
+@media only screen and (min-width: 800px) {
+
+  .topbar {
+    justify-content: space-between;
+  }
+
+  .topbar--open {
+    height: var(--h-topbar);
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .topbar__hamburger {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 35rem;
+    width: 100%;
+  }
+
+  .main-nav__item {
+    list-style: none;
+    display: block;
+    color: var(--c-font-main);
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: .8rem;
+    font-weight: 500;
+  }
+
+  .active .main-nav__item {
+    color: var(--c-link);
+  }
+
+  .topbar__toggle {
+    width: fit-content;
+    margin-right: 0;
+  }
+}

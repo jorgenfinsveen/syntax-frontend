@@ -1,0 +1,297 @@
+/* grid layout */
+
+.event-page {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        'ban'               /* banner */
+        'det'               /* details container */
+        'des'               /* description container */
+        'map';              /* mazemap container */
+}
+
+.event-details {
+    grid-area: det;
+}
+
+.event-banner {
+    grid-area: ban;
+}
+
+.event-description {
+    grid-area: des;
+}
+
+.event-map {
+	grid-area: map;
+}
+
+
+/* event details */
+
+.event-details {
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: var(--c-bg-box);
+    overflow: hidden; /* keeps map close to details on grid, not sure why tho... */
+    position: relative;
+}
+
+
+.event-datetime-display {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.event-datetime-display__right {
+    margin: auto 0;
+}
+
+.event-datetime-display__day {
+    font-size: 1.25rem;
+    color: var(--c-font-discret);
+}
+
+.event-datetime-display__time {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.event-datetime-display__time-icon {
+    font-size: 1.8rem;
+    margin-top: -.3rem;
+    margin-right: .3rem;
+}
+
+
+.event-details__list {
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 1rem;
+}
+
+.event-details__lable {
+    color: var(--c-font-discret);
+    display: inline-flex;
+}
+
+/* lable icon */
+.event-details__icon {
+    line-height: 1.5rem;
+    width: 2rem;
+    text-align: center;
+    padding-right: .5rem;
+}
+
+.event-details__icon--lable-color {
+    color: var(--c-font-discret);
+}
+
+
+.event-details__category-dot {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: .5rem;
+    transform: translateY(.2rem);
+}
+
+
+.event-details__info {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+	overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+
+/* event banner */
+
+.event-banner picture {
+    display: block;
+}
+
+.event-banner picture img, .event-banner .default-banner {
+    display: block;
+    aspect-ratio: 10 / 4;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+/* description */
+
+.event-description {
+    padding: 1rem;
+    position: relative;
+}
+
+.rules {
+    max-width: 40rem;
+    margin-top: 4rem;
+}
+
+.rules__content {
+    padding: .5rem 1rem 1rem 1rem;
+}
+
+.rules__title {
+    font-size: 1.2rem;
+}
+
+
+/* Map */
+
+.event-map {
+    margin: 2rem auto 0 auto;
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+
+@media only screen and (min-width: 400px) {
+
+    .event-page {
+        padding-top: 0;
+    }
+
+    .event-details {
+        padding: 2rem;
+    }
+
+    .event-description {
+        padding: 1rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+    .event-page {
+        grid-template-columns: 20rem 1fr;
+        grid-template-areas: 
+            'det ban'
+            'det des'
+            'map des'
+            '.   des';
+        column-gap: 7%;
+        padding: 3rem 1rem 0 1rem;
+        row-gap: 2rem;
+    }
+
+    .event-details {
+        padding: 0;
+        background: none;
+    }
+
+    .event-details:before {
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border-width: .7rem;
+        border-color: var(--c-corner-decor);
+        border-style: solid solid none none;
+        top: 0;
+        right: 0;
+        transition: .1s;
+    }
+
+    .event-datetime-display {
+        margin-right: 1.3rem;
+    }
+
+    .event-signup {
+        position: relative;
+    }
+
+    .event-signup:after {
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border-width: .7rem;
+        border-color: var(--c-corner-decor);
+        bottom: 0;
+        transition: .1s;
+    }
+
+    .event-signup--bottom-right-corner {
+        padding-bottom: 3rem;
+    }
+
+    .event-signup--bottom-left-corner:after {
+        border-style: none none solid solid;
+        left: 0;
+    }
+
+    .event-signup--bottom-right-corner:after {
+        border-style: none solid solid none;
+        right: 0;
+    }
+
+    .event-signup__btn-container {
+        display: flex;
+        justify-content: end;
+    }
+
+    .event-signup__btn {
+        min-width: 12rem;
+    }
+
+    .event-signup__msg {
+        width: 100%;
+    }
+
+    .event-banner img {
+        border-radius: .3rem;
+    }
+
+    .event-description {
+        padding: 0;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .event-description:after {
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border-width: .7rem;
+        border-color: var(--c-corner-decor);
+        border-style: solid solid none none;
+        top: 0;
+        right: 0;
+        transition: .1s;
+    }
+
+    .event-description:before {
+        content: '';
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        border-width: .7rem;
+        border-color: var(--c-corner-decor);
+        border-style: none solid solid none;
+        bottom: 0;
+        right: 0;
+        transition: .1s;
+    }
+
+    .rules {
+        margin-top: 4rem;
+    }
+
+    .rules__content {
+        padding: .5rem 1.5rem 1rem 1.5rem;
+    }
+
+    .event-map {
+        padding: 0;
+    }   
+}

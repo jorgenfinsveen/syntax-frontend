@@ -1,0 +1,38 @@
+{
+  "info": {
+    "start": "Starter",
+    "end": "Slutter",
+    "location": "Lokasjon",
+    "type": "Kategori",
+    "organizer": "Arrangør",
+    "links": "Lenker",
+    "stream": "Stream",
+    "capacity": "Kapasitet",
+    "form": {
+        "button": "Meld meg på",
+        "full": "Dette arrangementet er fullt!",
+        "send": "Send",
+        "sent": "Du er påmeldt.",
+        "cancel": "Meld meg av.",
+        "name": "Navn",
+        "degree": "Studieretning",
+        "study_year": "Studieår",
+        "mail": "Mail",
+        "preferences": "Preferanser",
+        "allergies": "Allergier"
+    }
+  }, 
+  "signup": {
+    "title": "Påmelding",
+    "action": "Meld meg på",
+    "open": "Åpner",
+    "closes": "Stenger",
+    "closed": "Stengte",
+    "none": "Dette arrangementet krever ingen påmelding",
+    "full": "Arrangementet er fullt",
+    "canceled": "Arrangementet er avlyst",
+    "not-ready": "Påmeldingen er ikke klar, mer info kommer senere"
+  },
+  "published" : "PUBLISERT",
+  "canceled": "AVLYST"
+}

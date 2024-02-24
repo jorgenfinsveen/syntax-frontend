@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "about": "About",
+    "events": "Events",
+    "jobad": "Career",
+    "verv":"Verv",
+    "companies": "For companies"
+  },
+  "footer": {
+    "sponsor": "Main partner",
+    "copy1": "Copyright &copy; ",
+    "copy2": " Login - Linjeforeningen for IT, NO 811 940 372"
+  }
+}
