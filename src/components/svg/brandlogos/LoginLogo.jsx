@@ -12,7 +12,7 @@ const LoginLogo = () => {
         } else {
             setSvg(<LightLogo/>);
         }
-    });
+    }, []);
 
     return (
         <>{svg}</>

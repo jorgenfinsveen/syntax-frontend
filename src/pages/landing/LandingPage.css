@@ -16,18 +16,20 @@
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: var(--c-font-main);
-    font-weight: 400;
+    font-weight: 700;
     margin-top: 4rem;
 }
 
 .welcome__text--gradient {
-    background: linear-gradient(90deg, #f100ff, #00fff6);
+    background: #ff7f27;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 700;
+    font-weight: lighter;
     font-size: 3.5rem;
     line-height: 1em;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.25rem;
 }
 
 /* logo component from assets -> svg */

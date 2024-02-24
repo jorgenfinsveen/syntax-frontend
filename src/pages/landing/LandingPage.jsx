@@ -18,7 +18,7 @@ const WelcomeBanner = ({t}) => {
         <picture className='welcome__pic'>
           <LoginLogo />
         </picture>
-        <p className='welcome__text'>{t('landing.welcome')}<br/><span className='welcome__text--gradient'>login.no</span></p>
+        <p className='welcome__text'>{t('landing.welcome')}<br/><span className='welcome__text--gradient'>SYNTAX</span></p>
       </div>
     </div>
   )
