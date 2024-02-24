@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Link } from 'react-router-dom'
 import './LandingPage.css'
 import DecoratedPicture from '../../components/picture/DecoratedPicture'
 import LoginLogo from '../../components/svg/brandlogos/LoginLogo';
 import { config } from '../../Constants'
 import {withTranslation} from "react-i18next";
-import {useContext} from "react";
 import ThemeContext from "../../context/ThemeContext";
 import EventCard from '../../components/event/EventCard';
 import JobadCard from '../../components/jobad/JobadCard';
