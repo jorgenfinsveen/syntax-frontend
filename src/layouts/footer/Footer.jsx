@@ -10,7 +10,7 @@ const Footer = ({ t }) => {
 
   return (
     <div className='footer'>
-      <div className='footer__flex-container'>
+      {/* <div className='footer__flex-container'>
         <picture className='footer__picture footer__picture-login'>
           <source srcSet={process.env.PUBLIC_URL + '/img/logo/logo-tekst-white.svg'} />
           <img alt='Login - Linjeforeningen for IT' />
@@ -22,7 +22,7 @@ const Footer = ({ t }) => {
           </picture>
           <p>{t('footer.sponsor')}</p>
         </a>
-      </div>
+      </div> */}
       <SocialLinks />
       <p className='footer__p' dangerouslySetInnerHTML={{ __html: ` ${t('footer.copy1')} ${currentYear} ${t('footer.copy2')}` }} />
     </div>
