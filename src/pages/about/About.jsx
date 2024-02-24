@@ -45,6 +45,8 @@ const About = ({t}) => {
       </section>
     </div>
   )
+  
+
 }
 
 export default withTranslation('aboutPage')(About)

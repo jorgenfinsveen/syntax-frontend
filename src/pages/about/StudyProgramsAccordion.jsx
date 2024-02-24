@@ -27,5 +27,4 @@ const StudyProgramsAccordion = ({t}) => {
     </ul>
   )
 }
-
 export default withTranslation('aboutPage')(StudyProgramsAccordion)
