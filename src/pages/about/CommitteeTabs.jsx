@@ -17,6 +17,7 @@ import '../../components/tabs/Tabs.css'
 import './CommitteeTabs.css'
 
 
+
 const CommitteeTabs = ({t}) => {
   const [activeTab, setActiveTab] = useState('styret')
 
@@ -48,9 +49,9 @@ const CommitteeTabs = ({t}) => {
           />
           <LogChamp
             img={config.url.CDN_URL + '/img/portraits/portrett_nestleder.jpg'}
-            name='Kristina Kataki'
+            name='Hallgeir Høgåsen'
             stilling={t('committeeSection.board.deputyChairman')}
-            discord='kataki7254'
+            discord='_greavling'
             discordlink='https://discordapp.com/users/877108421772582962'
           />
           <LogChamp
