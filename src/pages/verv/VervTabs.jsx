@@ -4,7 +4,7 @@ import EventkomLogo from '../../components/svg/committeelogos/EventkomLogo'
 import BedkomLogo from '../../components/svg/committeelogos/BedkomLogo'
 import TekkomLogo from '../../components/svg/committeelogos/TekkomLogo'
 import LogChamp from '../../components/logchamp/LogChamp'
-import {config} from '../../Constants';
+//import {config} from '../../Constants';
 
 import {useState} from 'react'
 import {withTranslation} from 'react-i18next'

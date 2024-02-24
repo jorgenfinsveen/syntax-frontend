@@ -2,7 +2,7 @@ import VervTabs from './VervTabs'
 import {withTranslation} from 'react-i18next';
 
 import './Verv.css'
-import ImageCarousel from './imageCarousel';
+//import ImageCarousel from './imageCarousel';
 
 const Verv = ({t}) => {
   return (
