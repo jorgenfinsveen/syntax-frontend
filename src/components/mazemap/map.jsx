@@ -1,23 +1,14 @@
 import './mazemap.css';
 
-const MazeMap = ({campusID, poi}) => {
-
+const MazeMap = ({}) => {
 	return (
-		<>
-			{campusID && poi &&
-				<iframe
-					title='mazemap'
-					className='mazemap'
-					src={`https://use.mazemap.com/embed.html?newtablink=false#v=1&campusid=${campusID}&sharemode=false&sharepoitype=poi&utm_medium=iframe&zoom=17&sharepoi=${poi}&lang=nb`}
-					width='100%'
-					height='100%'
-					frameBorder='0'
-					marginHeight='0'
-					marginWidth='0'
-					scrolling='no'
-				/>
-			}
-		</>
+		<iframe
+			title='mazemap'
+			className='mazemap'
+			src={`https://use.mazemap.com/embed.html#v=1&campusid=91&zlevel=1&center=6.235156,62.471926&zoom=18.4&sharepoitype=poi&sharepoi=1000289842`}
+			width='100%'
+			height='100%'
+		/>
 	)
 }
 
