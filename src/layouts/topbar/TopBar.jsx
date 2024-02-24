@@ -3,7 +3,8 @@ import { Link, NavLink } from 'react-router-dom'
 import Navigation from './Navigation'
 import MobileNavigation from './MobileNavigation'
 import ThemeToggle from '../../components/themetoggle/ThemeToggle'
-import LoginLogoSmall from '../../components/svg/brandlogos/LoginLogoSmall'
+import LoginLogo from '../../components/svg/brandlogos/LoginLogo'
+//import LoginLogoSmall from '../../components/svg/brandlogos/LoginLogoSmall'
 import ProfileSVG from '../../components/svg/profilesvg'
 
 import './TopBar.css'
@@ -17,7 +18,7 @@ const TopBar = () => {
     <div className={`topbar ${isOpen ? 'topbar--open' : ''}`}>
         <Link to='/' onClick={isOpen ? toggle : ''} >
             <picture className='topbar__logo'>
-                <LoginLogoSmall />
+                <LoginLogo/>
             </picture>
         </Link>
         <Navigation/>
