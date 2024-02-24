@@ -12,13 +12,13 @@ const Contact = ({t,i18n}) => {
       <div className='contact-card__info'>
         <div className='contact-card__text'>
           <h4 className='heading-4'>{t('contact.address')}:</h4>
-          <p className='p--regular'>Login - Linjeforeningen for IT
+          <p className='p--regular'>Syntax - Linjeforeningen for IT
             <br/>
-            Teknologivegen 22
+            Larsgårdsvegen 2
             <br/>
-            Bygg A, rom 155
+            Bygg A, rom B116
             <br/>
-            2815 GJØVIK
+            6009 ÅLESUND
           </p>
           <h4 className='heading-4'>{t('contact.email')}:</h4>
           <p className='p--regular'><a className='standard-link standard-link--underscore-hover' href='mailto:kontakt@login.no'>kontakt@login.no</a></p>
