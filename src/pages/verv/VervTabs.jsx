@@ -3,11 +3,8 @@ import TabContent from '../../components/tabs/TabContent'
 import EventkomLogo from '../../components/svg/committeelogos/EventkomLogo'
 import BedkomLogo from '../../components/svg/committeelogos/BedkomLogo'
 import TekkomLogo from '../../components/svg/committeelogos/TekkomLogo'
-import CtfkomLogo from '../../components/svg/committeelogos/CtfkomLogo'
-import SatkomLogo from '../../components/svg/committeelogos/SatkomLogo'
-import PrLogo from '../../components/svg/committeelogos/PrLogo'
 import LogChamp from '../../components/logchamp/LogChamp'
-import {config} from '../../Constants';
+//import {config} from '../../Constants';
 
 import {useState} from 'react'
 import {withTranslation} from 'react-i18next'
@@ -17,19 +14,16 @@ import './VervTabs.css'
 
 
 const VervTabs = ({t}) => {
-  const [activeTab, setActiveTab] = useState('event')
+  const [activeTab, setActiveTab] = useState('tekkom')
 
   return (
     <div className='tabs committees'>
       <ul className='tabs__nav'>
-        <TabNavItem title={<EventkomLogo/>} id='event' activeTab={activeTab} setActiveTab={setActiveTab}/>
-        <TabNavItem title={<TekkomLogo/>} id='tek' activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <TabNavItem title={<TekkomLogo/>} id='tekkom' activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <TabNavItem title={<EventkomLogo/>} id='eventkom' activeTab={activeTab} setActiveTab={setActiveTab}/>
         <TabNavItem title={<BedkomLogo/>} id='bedkom' activeTab={activeTab} setActiveTab={setActiveTab}/>
-        <TabNavItem title={<CtfkomLogo/>} id='ctf' activeTab={activeTab} setActiveTab={setActiveTab}/>
-        <TabNavItem title={<SatkomLogo/>} id='sat' activeTab={activeTab} setActiveTab={setActiveTab}/>
-        <TabNavItem title={<PrLogo/>} id='pr' activeTab={activeTab} setActiveTab={setActiveTab}/>
       </ul>
-      <TabContent id='event' activeTab={activeTab}>
+      <TabContent id='eventkom' activeTab={activeTab}>
         <h3 className='committees__heading heading-3'>
           <i className='logfont-eventkom'></i> {t('committeeSection.eventkom.title')}
         </h3>
@@ -39,15 +33,15 @@ const VervTabs = ({t}) => {
             <p className='p--regular' dangerouslySetInnerHTML={{__html: t('committeeSection.eventkom.body')}} />
           </div>
           <LogChamp
-            img={config.url.CDN_URL + '/img/portraits/portrett_eventkom-leder.jpg'}
-            name='Sander Tøkje Hauge'
+            img=''
+            name='Person'
             stilling={t('committeeSection.board.eventkom')}
-            discord='sandiss'
-            discordlink='https://discordapp.com/users/171972901501796352'
+            discord='eventKom leader'
+            discordlink=''
           />
         </div>
       </TabContent>
-      <TabContent id='tek' activeTab={activeTab}>
+      <TabContent id='tekkom' activeTab={activeTab}>
         <h3 className='committees__heading heading-3'>
           <i className='logfont-tekkom'></i> {t('committeeSection.tekkom.title')}
         </h3>
@@ -57,11 +51,11 @@ const VervTabs = ({t}) => {
             <p className='p--regular'>{t('committeeSection.tekkom.body')}</p>
           </div>
           <LogChamp
-            img={config.url.CDN_URL + '/img/portraits/portrett_tekkom-leder.jpg'}
-            name='Eirik Hanasand'
+            img=''
+            name='Joar'
             stilling={t('committeeSection.board.tekkom')}
-            discord='eirikhanasand'
-            discordlink='https://discordapp.com/users/376827396764073997'
+            discord='jalma'
+            discordlink='https://discordapp.com/users/158555910749290496'
           />
         </div>
       </TabContent>
@@ -75,65 +69,11 @@ const VervTabs = ({t}) => {
             <p className='p--regular'>{t('committeeSection.bedkom.body')}</p>
           </div>
           <LogChamp
-            img={config.url.CDN_URL + '/img/portraits/portrett_bedkom-leder.jpg'}
-            name='Ida Haavik Førland'
+            img=''//{config.url.CDN_URL + '/img/portraits/portrett_bedkom-leder.jpg'}
+            name='Emil'
             stilling={t('committeeSection.board.bedkom')}
-            discord='idaforland'
-            discordlink='https://discordapp.com/users/470279697465606159'
-          />
-        </div>
-      </TabContent>
-      <TabContent id='ctf' activeTab={activeTab}>
-        <h3 className='committees__heading heading-3'>
-          <i className='logfont-ctfkom'></i> {t('committeeSection.ctfkom.title')}
-        </h3>
-        <div className='committees__info'>
-          <div className='committees__text'>
-            <p className='p--highlighted'>{t('committeeSection.ctfkom.intro')}</p>
-            <p className='p--regular' dangerouslySetInnerHTML={{__html: t('committeeSection.ctfkom.body')}}/>
-          </div>
-          <LogChamp
-            img={config.url.CDN_URL + '/img/portraits/portrett_ctfkom-leder.jpg'}
-            name='Eskil Refsgaard'
-            stilling={t('committeeSection.board.ctfkom')}
-            discord='eskilrefsgaard'
-            discordlink='https://discordapp.com/users/522483274933731331'
-          />
-        </div>
-      </TabContent>
-      <TabContent id='sat' activeTab={activeTab}>
-        <h3 className='committees__heading heading-3'>
-          <i className='logfont-satkom-filled'></i> {t('committeeSection.satkom.title')}
-        </h3>
-        <div className='committees__info'>
-          <div className='committees__text'>
-            <p className='p--highlighted' dangerouslySetInnerHTML={{__html: t('committeeSection.satkom.intro')}} />
-            <p className='p--regular'>{t('committeeSection.satkom.body')}</p>
-          </div>
-          <LogChamp
-            img={config.url.CDN_URL + '/img/portraits/portrett_økonomi.jpg'}
-            name='Trygve Sollund'
-            stilling={t('committeeSection.board.satkom')}
-            discord='spikeupine'
-            discordlink='https://discordapp.com/users/209395476288634881'
-          />
-        </div>
-      </TabContent>
-      <TabContent id='pr' activeTab={activeTab}>
-        <h3 className='committees__heading heading-3'>
-        <i className='logfont-pr'></i> {t('committeeSection.pr.title')}
-        </h3>
-        <div className='committees__info'>
-          <div className='committees__text'>
-            <p className='p--highlighted' dangerouslySetInnerHTML={{__html: t('committeeSection.pr.intro')}} />
-            <p className='p--regular'>{t('committeeSection.pr.body')}</p>
-          </div>
-          <LogChamp
-            img={config.url.CDN_URL + '/img/portraits/portrett_pr-leder.jpg'}
-            name='Bjørn Kristian Strand'
-            stilling={t('committeeSection.board.pr')}
-            discord='bk_suup'
-            discordlink='https://discordapp.com/users/353992260507140097'
+            discord='kaliberty'
+            discordlink='https://discordapp.com/users/223153752406753281'
           />
         </div>
       </TabContent>
