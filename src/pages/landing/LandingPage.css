@@ -7,12 +7,14 @@
     padding: 4rem 2rem;
     max-width: 40rem;
     margin: auto;
+    display: inline-block;
+    text-align: center;
+    margin-left: 10%;
 }
 
 .welcome__text {
-    display: block;
+    display: inline-block;
     width: 100%;
-    text-align: right;
     font-size: 1.5rem;
     line-height: 2.2rem;
     color: var(--c-font-main);
@@ -34,7 +36,7 @@
 
 /* logo component from assets -> svg */
 .landing-logo {
-    display: block;
+    display: inline-block;
     width: 100%;
     max-width: 40rem;
     margin: auto;
@@ -93,12 +95,32 @@
     min-width: 10rem;
 }
 
+.sponsors {
+    margin-left: 55%;
+    display: inline-block;
+}
+
+.sponsor-logo {
+    width: 20vw;
+    display: block;
+}
+
 @media only screen and (min-width: 400px) {
     .dynamic-preview__view-more-btn {
         font-size: 1.1rem;
         align-self: center;
         width: fit-content;
         margin: 2rem auto 0 auto;
+    }
+
+    .welcome__container {
+        padding: 4rem 2rem;
+        max-width: 40rem;
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
     }
 }
 
@@ -119,6 +141,15 @@
         font-size: 1.1rem;
         align-self: center;
         margin: 0 auto;
+    }
+
+    .welcome__container {
+        padding: 4rem 2rem;
+        max-width: 40rem;
+        margin: auto;
+        display: inline-block;
+        text-align: center;
+        margin-left: 20%;
     }
 
 }
@@ -162,7 +193,7 @@
     grid-area: a;
     max-width: 31rem;
     width: 100%;
-    margin: auto;
+    margin-right: 10%;
     padding: 1rem 0;
 }
 
@@ -190,6 +221,7 @@
         max-width: 75rem;
         padding: 5rem 3rem 6rem;
         gap: 4rem;
+        margin-left: -5%;
     }
 
     .welcome__text {
@@ -230,6 +262,7 @@
     .welcome__container {
         padding: 9rem 3rem 11rem;
         gap: 5rem;
+        margin-left: -5%;
     }
 
     .welcome__text {
@@ -252,6 +285,7 @@
     .welcome__container {
         padding: 10rem 3rem 11rem;
         gap: 7rem;
+        margin-left: -5%;
     }
 
     .welcome__text {

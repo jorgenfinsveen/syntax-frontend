@@ -4,7 +4,7 @@
     "welcome": "Velkommen til",
     "whoAreWe": {
       "title": "Hvem er vi?",
-      "body": "Login er linjeforeningen for IT ved NTNU i Gjøvik. Foreningen drives av studenter og målet med arbeidet vårt er å forbedre studiemiljøet på universitetet."
+      "body": "Syntax er linjeforeningen for og av studenter ved Institutt for IKT og Realfag, NTNU Ålesund."
     },
     "eventsPreview": {
       "title": "Arrangementer",
@@ -15,12 +15,12 @@
       "see-all": "Se alle"
     },
     "sponsor": {
-      "title": "mnemonic",
-      "body": "Hovedsamarbeidspartneren vår er mnemonic. De er en av Europas ledende tjenesteleverandører innen cybersikkerhet. Ekspertene deres står alltid klar til å håndtere avanserte cyberangrep."
+      "title": "Samarbeidspartnere",
+      "body": "Våre hovedsamarbeidspartnere er twoday & Sparebank 1 Møre."
     },
     "companiesInfo": {
       "title": "For bedrifter",
-      "body": "Login fungerer som bindeleddet mellom studier og arbeidsliv. Sjekk ut hva vi kan tilby din bedrift."
+      "body": "Syntax fungerer som bindeleddet mellom studier og arbeidsliv. Sjekk ut hva vi kan tilby din bedrift."
     }
   }
 }

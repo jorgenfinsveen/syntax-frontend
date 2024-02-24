@@ -56,12 +56,16 @@ const SmallInfo = ({t}) => {
       </div>
 
       <div className='landing-info'>
+      <div className='sponsors'>
+          <img className='sponsor-logo' alt='twoday' src='https://www.twoday.no/hubfs/twoday/Metabilder/Twoday%20with%20green%20-%20meta.jpg#keepProtocol'/>
+          <br/>
+          <img className='sponsor-logo' alt='sparebak1 møre' src='https://www.sbm.no/upload_images/BB128B824AD94A9EA8C7DBA6FDF5F7A0.png'/>
+        </div>
         <div className='landing-info__text'>
           <h2 className='heading-2'>{t('landing.sponsor.title')}</h2>
           <p className='p--regular'>{t('landing.sponsor.body')}</p>
-          <a className='landing-info__link standard-link standard-link--corner-hover' href='https://www.mnemonic.io/' target='_blank'>{t('landing.readMore')}</a>
         </div>
-        <DecoratedPicture imgurl={config.url.CDN_URL + getSponsorPath()} decorationNr={0} cornerSize={0} w={400} h={130} />
+
       </div>
     </>
   )
