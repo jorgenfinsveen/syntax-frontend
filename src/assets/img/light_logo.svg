@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.71 1054.16" width="30vw" height="30vw">
+    <defs>
+        <style>
+            .cls-1,.cls-2{fill: none; stroke-miterlimit: 10; stroke-width: 40px;}
+            .cls-1{stroke: #ff7f27;}
+            .cls-2{stroke: #000;}
+            .cls-3{font-size: 64.42px; fill: #ff7f27; font-family: Consolas;}
+            .cls-4{letter-spacing: 0.86em;}
+        </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <polyline class="cls-1" points="267.94 10 36.17 411.44 499.71 411.44"/>
+            <polyline class="cls-2" points="231.77 909 463.54 507.56 0 507.56"/>
+        </g>
+    </g>
+</svg>
